@@ -1,0 +1,43 @@
+void main()
+{
+   int Op;
+   float L,R1,Ra,R2,R3,,R4,P1,P2;Tp,Ef,S;
+   do{
+	   cout << "Eliga una opcion: ";
+	   cout << "\n 1) Calcular Area del cuadrado "; 
+	   cout << "2) Calcular Area circunferencia ";
+	   cout << "3) Calcular Nota Final ";
+	   cout << "4) Calculcar Salario + IVA ";
+	   cin >> Op;
+      
+   switch(Op)
+   {case 1: cout << "Ingrese lado: ";
+            cin >> L;
+            R1=L*L;
+			cout << "Area Cuadrado = " << R1;
+			break;
+   case 2:  cout << "Ingrese Radio: ";
+            cin >> Ra;
+            R2=(3,14*(Ra*Ra));
+			cout << "Area Circunferencia = " << R2;
+			break;
+   case 3:  cout << "Ingrese Primer Parcial: ";
+            cin >> P1;
+			cout << "Ingrese Segundo Parcial: ";
+            cin >> P2;
+			cout << "Ingrese Trabajos Practicos: ";
+            cin >> Tp;
+			cout << "Ingrese Examen Final: ";
+            cin >> Ef;
+            R3=(P1*0,2)+(P2*0,2)+(Tp*0,2)(Ef*0,4);
+			cout << "Nota Final = " << R3;
+			break;
+	case 4: cout << "Ingrese Salario: ";
+            cin >> S;
+			R4= S*0,13;
+			cout << "Descuento IVA = " << R4;
+			break;
+   }
+   }while(Op>5&&Op<0);
+   getch();
+}
